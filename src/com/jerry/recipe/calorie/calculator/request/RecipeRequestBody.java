@@ -1,7 +1,5 @@
 package com.jerry.recipe.calorie.calculator.request;
 
-import org.codehaus.jackson.annotate.JsonProperty;
-
 import android.content.Context;
 
 public abstract class RecipeRequestBody {
@@ -11,7 +9,6 @@ public abstract class RecipeRequestBody {
         mContext = context;
     }
     
-    @JsonProperty("auth")
     public RecipeAuthentication getAuthentication() {
         return RecipeAuthentication.getJsonObject(mContext);
     }

@@ -1,9 +1,7 @@
 package com.jerry.recipe.calorie.calculator.response;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-public abstract class FoodMainResponse<TData> {
+public abstract class FoodMainResponse<TData> extends ErrorResponse {
     
     private TData foods;
     

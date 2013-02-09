@@ -4,8 +4,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
-
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -69,7 +67,6 @@ public class GetFoodSearchRequest extends RecipeRequest<GetFoodSearchResponseWra
         return GetFoodSearchResponseWrapper.class;
     }
     
-    @JsonIgnore
     public String getSearchExpression(){
     	return mSearchExpression;
     }

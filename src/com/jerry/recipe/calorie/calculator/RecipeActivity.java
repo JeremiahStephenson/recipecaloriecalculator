@@ -1,11 +1,8 @@
 package com.jerry.recipe.calorie.calculator;
 
-import org.springframework.http.HttpStatus;
-
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.jerry.recipe.calorie.calculator.service.RequestServiceStatus;
@@ -47,15 +44,6 @@ public class RecipeActivity extends SherlockFragmentActivity {
             AlertDialog.Builder builder = new Builder(this).setTitle("Error!")
                 .setMessage("Something went wrong.  Details:\n\n" + requestServiceStatus.getData()).setPositiveButton(R.string.ok, null);
             builder.show();
-        }
-    }
-
-    public void onEventMainThread(HttpStatus status) {
-        if (RecipeApp.IS_DEVELOPMENT) {
-            if (status != null) {
-                Toast.makeText(this, String.format("%s %s: %s", status.getReasonPhrase(), status.name(), status.value() + ""),
-                    Toast.LENGTH_SHORT).show();
-            }
         }
     }
 }

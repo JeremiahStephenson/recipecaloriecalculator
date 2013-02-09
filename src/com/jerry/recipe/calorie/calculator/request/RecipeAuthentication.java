@@ -12,9 +12,6 @@ import java.util.Comparator;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
-import org.codehaus.jackson.annotate.JsonProperty;
-
 import android.content.Context;
 
 import com.jerry.recipe.calorie.calculator.request.RecipeRequest.RequestType;
@@ -82,7 +79,7 @@ public class RecipeAuthentication {
     		
     		byte[] rawHmac = mac.doFinal(signature.getBytes("UTF-8"));
     		
-    		final String finalUrl = RecipeRequest.RECIPE_SERVER + "?" + builder.toString() + "&oauth_signature=" + Base64Util.encodeBytes(rawHmac);
+    		final String finalUrl = RecipeRequest.RECIPE_SERVER + "?" + builder.toString() + "&oauth_signature=" + encode(Base64Util.encodeBytes(rawHmac));
     		
     		return new URI(finalUrl);
 		}
@@ -91,37 +88,30 @@ public class RecipeAuthentication {
     	}
     }
     
-    @JsonProperty("oauth_signature_method") 
     public String getSignatureMethod() {
     	return SIGNATURE_METHOD;
     }
     
-    @JsonProperty("oauth_version")
     public String getOauthVersion() {
     	return OAUTH_VERSION;
     }
 
-    @JsonProperty("oauth_consumer_key")
     public String getApiKey() {
         return API_KEY;
     }
 
-    @JsonProperty("oauth_nonce")
     public String getRand() {
         return mRand;
     }
 
-    @JsonIgnore
     private void setRand(String rand) {
         mRand = rand;
     }
     
-    @JsonProperty("oauth_timestamp")
     public long getTimestamp() {
         return mTimeStamp;
     }
 
-    @JsonIgnore
     private void setTimestamp(long timestamp) {
         mTimeStamp = timestamp;
     }

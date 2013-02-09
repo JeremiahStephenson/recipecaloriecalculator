@@ -94,7 +94,13 @@ public abstract class RecipeRequestService<TRequest extends RecipeRequest<TRespo
         	message = fe.getMessage();
         }
 
-        if (response == null && !request.getResponseType().equals(EmptyResponse.class)) {
+        if ((response == null || response.response == null || response.response.getError() != null)
+        		&& !request.getResponseType().equals(EmptyResponse.class)) {
+        	
+        	if (response.response.getError() != null) {
+        		message = response.response.getError().getMessage();
+        	}
+        	
             mEventBus.post(new RequestServiceStatus(mName, RequestServiceStatusType.Error, message));
         }
 
