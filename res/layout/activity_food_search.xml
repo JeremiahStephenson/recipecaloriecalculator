@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/search_bar_height"
+    	android:orientation="horizontal">
+        
+        <EditText
+	        android:id="@+id/txt_search"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	    	android:layout_height="wrap_content"
+	    	android:inputType="text"/>
+	    
+	    <Button 
+	        android:id="@+id/btn_search"
+	        android:text="@string/search"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    <fragment
+        android:id="@+id/food_search_list"
+        android:name="com.jerry.recipe.calorie.calculator.fragments.FoodItemListFragment"
+        android:layout_below="@id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+     
+</RelativeLayout>

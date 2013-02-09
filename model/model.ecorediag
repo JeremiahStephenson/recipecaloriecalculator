@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_bHNpEeqPEd-cf4p1YNxwtA" type="EcoreTools" name="DefaultName" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_FVKz8HDWEeK6MJ7LbSNbAg" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_FVUk8HDWEeK6MJ7LbSNbAg" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_FVVzEHDWEeK6MJ7LbSNbAg" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_JvjUkHDWEeK6MJ7LbSNbAg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="model.ecore#//FoodSearchItem/serverId"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JvjUkXDWEeK6MJ7LbSNbAg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_RRHBgHDWEeK6MJ7LbSNbAg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="model.ecore#//FoodSearchItem/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_RRHBgXDWEeK6MJ7LbSNbAg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_TYEuAHDWEeK6MJ7LbSNbAg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="model.ecore#//FoodSearchItem/type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TYEuAXDWEeK6MJ7LbSNbAg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_U241YHDWEeK6MJ7LbSNbAg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="model.ecore#//FoodSearchItem/brand"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U241YXDWEeK6MJ7LbSNbAg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_V74HgHDWEeK6MJ7LbSNbAg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="model.ecore#//FoodSearchItem/url"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V74HgXDWEeK6MJ7LbSNbAg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_WVfhYHDWEeK6MJ7LbSNbAg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="model.ecore#//FoodSearchItem/description"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WVfhYXDWEeK6MJ7LbSNbAg"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_FVVzEXDWEeK6MJ7LbSNbAg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FVVzEnDWEeK6MJ7LbSNbAg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FVVzE3DWEeK6MJ7LbSNbAg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_FVWaIHDWEeK6MJ7LbSNbAg" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_FVWaIXDWEeK6MJ7LbSNbAg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FVWaInDWEeK6MJ7LbSNbAg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FVWaI3DWEeK6MJ7LbSNbAg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_FVKz8XDWEeK6MJ7LbSNbAg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="model.ecore#//FoodSearchItem"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FVKz8nDWEeK6MJ7LbSNbAg" x="96" y="48" width="211" height="183"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_bHOQIOqPEd-cf4p1YNxwtA"/>
+  <element xmi:type="ecore:EPackage" href="model.ecore#/"/>
+</notation:Diagram>

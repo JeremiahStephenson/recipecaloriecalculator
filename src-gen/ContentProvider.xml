@@ -1,0 +1,4 @@
+Copy this code snippet in your AndroidManifest.xml inside the <application> element to activate the content provider
+	
+<provider android:name="com.jerry.recipe.calorie.calculator.contentprovider.Provider" android:authorities="com.jerry.recipe.calorie.calculator.provider.recipecalculator" />
+	
